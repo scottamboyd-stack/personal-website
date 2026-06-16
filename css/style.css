@@ -85,10 +85,6 @@ header {
   letter-spacing: -0.04em;
   line-height: 1.1;
   margin-bottom: 1rem;
-  background: linear-gradient(120deg, #f0f4f8 30%, #c0392b 60%, #1a4f8f 90%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 
 .hero-sub {
@@ -315,6 +311,27 @@ footer {
   font-size: 0.8rem;
   color: var(--muted);
   border-top: 1px solid var(--border);
+}
+
+/* Wave animation */
+.wave-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.wave-letter {
+  display: inline-block;
+  position: relative;
+  color: var(--text);
+}
+
+.wave-flag {
+  position: absolute;
+  bottom: -22px;
+  display: none;
+  transform: translateX(-50%);
+  pointer-events: none;
+  filter: drop-shadow(0 1px 3px rgba(0,0,0,0.4));
 }
 
 /* Responsive */
