@@ -242,6 +242,72 @@ section h2::after {
 
 .social-links a:hover { color: var(--text); border-color: var(--accent); }
 
+/* Timeline */
+.section-intro {
+  color: var(--muted);
+  max-width: 680px;
+  margin-bottom: 3rem;
+  font-size: 1.05rem;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 2rem;
+  padding: 2rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.timeline-item:last-child { border-bottom: 1px solid var(--border); }
+
+.timeline-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding-top: 0.2rem;
+}
+
+.timeline-date {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.timeline-location {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.timeline-body h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.15rem;
+}
+
+.timeline-body h4 {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--accent2);
+  margin-bottom: 0.75rem;
+}
+
+.timeline-body p {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 640px) {
+  .timeline-item { grid-template-columns: 1fr; gap: 0.5rem; }
+}
+
 /* Footer */
 footer {
   text-align: center;
